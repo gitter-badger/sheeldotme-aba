@@ -1,4 +1,4 @@
 sheeldotme-duosexagesimal-system
 ================================
 
-Converts numbers between the duosexagesimal and decimal systems.
+![build status](https://travis-ci.org/sheeldotme/sheeldotme-duosexagesimal-system.svg)
