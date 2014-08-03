@@ -5,8 +5,9 @@ sheeldotme-aba
 
 Install
 =======
-
+```bash
   npm install sheeldotme-aba
+```
 
 Usage
 =====

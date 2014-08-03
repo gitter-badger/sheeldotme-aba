@@ -9,7 +9,7 @@ module.exports.toDecimal = function toDecimal(duosexagesimalNumber) {
 
   /* Enforce prerequisites */
 
-  if (typeof duosexagesimalNumber !== 'string') return;
+  if (typeof duosexagesimalNumber !== 'string') return null;
 
   /* Convert the number from base 62 to base 10 */
 
