@@ -4,7 +4,7 @@
   "description": "Converts numbers between the duosexagesimal and decimal systems.",
   "main": "duosexagesimal-system.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,9 @@
     "duosexagesimal",
     "base-62"
   ],
+  "dependencies": {
+    "mocha": "1.21.3"
+  },
   "author": "Sheel Patel <hello@sheel.me>",
   "license": "ISC"
 }
