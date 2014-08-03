@@ -1,0 +1,20 @@
+{
+  "name": "sheeldotme-duosexagesimal-system",
+  "version": "1.1.0",
+  "description": "Converts numbers between the duosexagesimal and decimal systems.",
+  "main": "duosexagesimal-system.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheeldotme/sheeldotme-duosexagesimal-system.git"
+  },
+  "keywords": [
+    "duosexagesimal",
+    "base-62"
+  ],
+  "author": "Sheel Patel <hello@sheel.me>",
+  "license": "ISC"
+}
+
