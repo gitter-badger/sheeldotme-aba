@@ -12,9 +12,31 @@ Install
 Usage
 =====
 ```javascript
-  var aba = require('sheeldotme-aba');
-  aba.toDecimal('1aA');
-  aba.fromDecimal(100);
+  var base62 = require('sheeldotme-aba');
+  base62.toDecimal('1aA');
+  base62.fromDecimal(100);
+```
+
+Handling Errors
+===============
+
+If the value past to aba is not appropriate, it returns null.
+
+```javascript
+  var result = base62.toDecimal('1aA');
+  console.log(result); // 6086
+  
+  var result = base62.toDecimal('1aA!');
+  console.log(result); // null
+```
+
+Test for a successful result by making sure the response is not null
+
+```javascript
+  var result = base62.toDecimal('1aA');
+  if(result !== null) {
+    console.log(result); // 6086
+  }
 ```
 
 Contribute
