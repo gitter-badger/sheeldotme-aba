@@ -1,8 +1,8 @@
-var duosexagesimal = require('./duosexagesimal-system');
+var duosexagesimal = require('./aba');
 
 var assert = require("assert")
 
-describe('duosexagesimal', function () {
+describe('aba', function () {
 
   describe('#toDecimal()', function () {
     it('should return null if no arguments passed', function () {
