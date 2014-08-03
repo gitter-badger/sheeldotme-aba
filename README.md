@@ -1,7 +1,7 @@
 sheeldotme-aba
 ================================
 
-![build status](https://api.travis-ci.org/sheeldotme/sheeldotme-aba.svg)
+[![build status](https://api.travis-ci.org/sheeldotme/sheeldotme-aba.svg)](https://travis-ci.org/sheeldotme/sheeldotme-aba)
 
 Install
 =======
