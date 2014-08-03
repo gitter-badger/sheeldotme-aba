@@ -1,7 +1,7 @@
 sheeldotme-duosexagesimal-system
 ================================
 
-![build status](https://travis-ci.org/sheeldotme/sheeldotme-duosexagesimal-system.svg)
+![build status](https://api.travis-ci.org/sheeldotme/sheeldotme-aba.svg)
 
 Install
 =======
