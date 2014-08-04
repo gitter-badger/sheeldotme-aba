@@ -47,6 +47,9 @@ describe('aba', function () {
     it('should return null when the decimal value is too large', function () {
       assert.equal(aba.fromDecimal(9007199254740992), null);
     });
+    it('should return null when the decimal value is negative', function () {
+      assert.equal(aba.fromDecimal(-1), null);
+    });
     it('should return correct duosexagesimal values', function () {
       assert.equal(aba.fromDecimal(0), '0');
       assert.equal(aba.fromDecimal(5), '5');

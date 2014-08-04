@@ -41,6 +41,7 @@ module.exports.fromDecimal = function fromDecimal(decimalNumber) {
   /* Enforce prerequisites */
 
   if (typeof decimalNumber !== 'number') return null;
+  if (decimalNumber < 0) return null;
   if (decimalNumber % 1 !== 0) return null;
   if (decimalNumber >= 9007199254740992) return null;
 
