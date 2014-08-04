@@ -15,7 +15,7 @@
     "base-62",
     "base62"
   ],
-  "dependencies": {
+  "devDependencies": {
     "mocha": "1.21.3"
   },
   "author": "Sheel Patel <hello@sheel.me>",
