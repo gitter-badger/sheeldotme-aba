@@ -1,6 +1,6 @@
 {
   "name": "sheeldotme-aba",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Converts numbers between the duosexagesimal and decimal systems.",
   "main": "aba.js",
   "scripts": {
