@@ -26,9 +26,7 @@ module.exports.toDecimal = function toDecimal(duosexagesimalNumber) {
 
   /* Return null if decimal number is so large that precision is lost */
 
-  if (decimalNumber >= 9007199254740992) {
-    return null;
-  }
+  if (decimalNumber >= 9007199254740992) return null;
 
   return decimalNumber;
 };
@@ -42,7 +40,9 @@ module.exports.fromDecimal = function fromDecimal(decimalNumber) {
 
   /* Enforce prerequisites */
 
-  if (decimalNumber !== (decimalNumber | 0)) return null;
+  if (typeof decimalNumber !== 'number') return null;
+  if (decimalNumber % 1 !== 0) return null;
+  if (decimalNumber >= 9007199254740992) return null;
 
   /* Convert the number from base 10 to base 62 */
 
