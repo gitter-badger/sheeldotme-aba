@@ -1,4 +1,5 @@
-var digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split('');
+var digits         = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split('');
+var precisionLimit = 9007199254740992;
 
 /**
  *
@@ -26,7 +27,7 @@ module.exports.toDecimal = function toDecimal(duosexagesimalNumber) {
 
   /* Return null if decimal number is so large that precision is lost */
 
-  if (decimalNumber >= 9007199254740992) return null;
+  if (decimalNumber >= precisionLimit) return null;
 
   return decimalNumber;
 };
@@ -43,7 +44,7 @@ module.exports.fromDecimal = function fromDecimal(decimalNumber) {
   if (typeof decimalNumber !== 'number') return null;
   if (decimalNumber < 0) return null;
   if (decimalNumber % 1 !== 0) return null;
-  if (decimalNumber >= 9007199254740992) return null;
+  if (decimalNumber >= precisionLimit) return null;
 
   /* Convert the number from base 10 to base 62 */
 
