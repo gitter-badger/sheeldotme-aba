@@ -20,7 +20,7 @@ Usage
 Handling Errors
 ===============
 
-If the value past to aba is not appropriate, it returns null.
+If the value passed to aba is not appropriate, it returns null.
 
 ```javascript
   var result = base62.toDecimal('1aA');
